@@ -10,7 +10,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background: #000000;
+    background: #dfebf0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,5 +58,42 @@ form input.equal {
 }
 
 form input.ac {
-    background: #dcffd1;
+    width: 133px;
+    background: rgb(175, 248, 153);
+}
+
+/* Footer */
+footer {
+    background: #dfebf0;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: grey; 
+}
+
+.logo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.rights {
+    color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+.tweet {
+    margin-left: 5px;
 }

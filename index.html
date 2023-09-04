@@ -6,6 +6,7 @@
     <title>Calculator by Susmit</title>
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container">
@@ -17,14 +18,14 @@
                 <div>
                     <input type="button" value= "AC" class="ac" onclick="display.value = '' ">
                     <input type="button" value="DEL" class="symbol" onclick="display.value = display.value.toString().slice(0,-1)">
-                    <input type="button" value="%" class="symbol" onclick="display.value += '%' ">
-                    <input type="button" value="÷" class="symbol" onclick="display.value += '÷' ">
+                    <!-- <input type="button" value="," class="symbol" onclick="display.value += ',' "> -->
+                    <input type="button" value="÷" class="symbol" onclick="display.value += '/' ">
                 </div>
                 <div>
                     <input type="button" value="7" onclick="display.value += '7' ">
                     <input type="button" value="8" onclick="display.value += '8' ">
                     <input type="button" value="9" onclick="display.value += '9' ">
-                    <input type="button" value="×" class="symbol" onclick="display.value += '×' ">
+                    <input type="button" value="×" class="symbol" onclick="display.value += '*' ">
                 </div>
                 <div>
                     <input type="button" value="4" onclick="display.value += '4' ">
@@ -42,7 +43,7 @@
                     <input type="button" value="00" onclick="display.value += '00' "> 
                     <input type="button" value="0" onclick="display.value += '0' ">
                     <input type="button" value="." onclick="display.value += '.' "> 
-                    <input type="button" value="=" class="equal">
+                    <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)">
                 </div>
         </div>
     </div>
